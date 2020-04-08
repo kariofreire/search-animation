@@ -1,0 +1,122 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: inherit;
+}
+
+body,
+input,
+button {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+/* HEADER */
+.header {
+	height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+
+.header > .container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-brand {
+	display: flex;
+	align-items: center;
+}
+
+.header-brand strong {
+	margin-left: 5px;
+}
+
+.header-icon{
+	height: 28px;
+	width: 28px;
+}
+
+/* SEARCH */
+.search {
+	height: 0;
+	visibility: hidden;
+	background-color: #7159c1;
+	transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.search.active {
+	height: 50px;
+	visibility: visible;
+}
+
+.search > .container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.search-form {
+	display: flex;
+	width: 100%;
+}
+
+.search-form input {
+	flex: 1;
+	color: #fff;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .6);
+	background-color: transparent;
+	transition: border 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.search-form input:focus {
+	border-color: #fff;
+}
+
+.search-form button {
+	cursor: pointer;
+	padding: 5px;
+	background-color: #fff;
+	border: none;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.search-btn {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	outline: 0;
+	color: #fff;
+}
+
+.search-icon {
+	width: 20px;
+	height: 20px;
+	fill: #333;
+}
